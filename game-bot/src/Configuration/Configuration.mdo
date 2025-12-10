@@ -12,6 +12,7 @@
   <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="42a1fb45-e84c-4b12-9b54-3d6bd8ea2bb7"/>
   <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="b65dbe6e-d424-408b-87f3-0474ad63191d"/>
   <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="d111b83e-24d7-48d8-b461-f0978ce77a6e"/>
+  <configurationExtensionCompatibilityMode>8.3.27</configurationExtensionCompatibilityMode>
   <defaultRunMode>ManagedApplication</defaultRunMode>
   <usePurposes>PersonalComputer</usePurposes>
   <scriptVariant>Russian</scriptVariant>
