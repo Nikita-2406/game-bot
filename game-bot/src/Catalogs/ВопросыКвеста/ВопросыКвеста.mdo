@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f604abd-1caa-426e-8fd4-6620d820ee4f">
+  <producedTypes>
+    <objectType typeId="644089e9-91fe-4f2e-8cc5-aa48f1f7e1d5" valueTypeId="1240f3f7-9395-40d8-8a6b-80f8b58963fc"/>
+    <refType typeId="25dbca0c-1206-4b5a-9461-65c1365a89b6" valueTypeId="1e5aad30-6525-46fd-8924-db52fb0e53b5"/>
+    <selectionType typeId="e396f1ed-8806-4f9b-9f8c-107afeeafaac" valueTypeId="af506a96-f2f3-4b3a-a856-945336cbdcee"/>
+    <listType typeId="cae31944-4845-4faf-956e-6a8ec7bb4b81" valueTypeId="de760bd5-5a9b-4656-97c8-e3e13a91571c"/>
+    <managerType typeId="23536de7-5b73-4047-8359-32da236f7ec2" valueTypeId="8c27d952-b1bf-4285-8d62-b7ca4c456c8c"/>
+  </producedTypes>
+  <name>ВопросыКвеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вопросы квеста</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ВопросыКвеста.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ВопросыКвеста.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Вопрос теста с расшифровкой</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.ВопросыКвеста.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="fef9417c-8c1e-4769-8166-c3c7dbffeb0f">
+    <name>ТекстВопроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Текст вопроса</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <multiLine>true</multiLine>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="34b9012b-c3ff-4b30-99a7-85b342522289">
+    <name>КоличествоОтветов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество ответов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="99145446-e642-4e81-87bd-f7d097afaf35">
+    <name>Активность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Активность</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="03f09e84-ff51-4657-831e-8f3eaa27bc5e">
+    <producedTypes>
+      <objectType typeId="99f0d7f9-17d3-4a83-9775-6af2dd317e37" valueTypeId="df27317f-6d5d-43d6-ada5-3c6c83449aa6"/>
+      <rowType typeId="45c3b549-84eb-416f-9ad9-6cc0a8e6f6fc" valueTypeId="caa9166a-2ea7-4f5e-8f0f-814e03810b35"/>
+    </producedTypes>
+    <name>Ответы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ответы</value>
+    </synonym>
+    <attributes uuid="6ec28449-f3a3-4310-8341-225ef51a5e84">
+      <name>СледующийВопрос</name>
+      <synonym>
+        <key>ru</key>
+        <value>Следующий вопрос</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВопросыКвеста</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <forms uuid="ed46b4a3-5cf6-4766-86fa-bbd5ac321708">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Catalog>

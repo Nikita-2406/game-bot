@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="317b8c19-6c34-4d17-b4cb-38b2664b55ed">
+  <producedTypes>
+    <objectType typeId="c4e141dd-48dd-499d-9f16-f1c94e0d0a10" valueTypeId="30c2e9cf-128e-43f6-9485-3c7a8e7a438a"/>
+    <refType typeId="71b18ba6-6472-4371-b04b-e5f50d4933fc" valueTypeId="2609af92-369c-43d0-8492-68ac8297ac2c"/>
+    <selectionType typeId="6384c52a-dc8b-49da-b9ec-f0aa023c346f" valueTypeId="b4d807d3-5b90-4d47-aa2d-442bea3ec808"/>
+    <listType typeId="9a724e61-78b2-4649-981f-5a78dd398a29" valueTypeId="bd15aafb-4303-4be7-a27d-303cd7db230a"/>
+    <managerType typeId="89cf2614-cf3a-466d-a6fb-c32cffa7028c" valueTypeId="f9101714-810e-48fb-9657-4094cef3f39b"/>
+  </producedTypes>
+  <name>ПрохождениеКвеста</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прохождение квеста</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПрохождениеКвеста.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <listPresentation>
+    <key>ru</key>
+    <value>Прохождения теста</value>
+  </listPresentation>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <posting>Deny</posting>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <attributes uuid="6194d834-833c-48c3-bd16-0578694d0d2c">
+    <name>УчетнаяЗапись</name>
+    <synonym>
+      <key>ru</key>
+      <value>Учетная запись</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.УчетныеЗаписиТелеграм</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2e15a9e7-b9ca-4ddd-8fa5-19bf3bee5ad7">
+    <name>ИтогоБаллов</name>
+    <synonym>
+      <key>ru</key>
+      <value>Итого баллов</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="24072f6f-c3a8-4fd3-a5bb-997cacfdce55">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.РасшифровкиТестаСРасшифровкой</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="a2c47983-933c-4774-92ed-12d313b0ae77">
+    <producedTypes>
+      <objectType typeId="b6a30b61-ed6e-4dc3-9343-b66a845fa49b" valueTypeId="c131b4ff-ac15-4fb5-9c98-db1438fd1a77"/>
+      <rowType typeId="27ab458a-765c-4c65-ae85-01c40082fa1f" valueTypeId="c7f38737-6e3d-4a5a-b681-a536bbdbb31d"/>
+    </producedTypes>
+    <name>Вопросы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вопросы</value>
+    </synonym>
+    <attributes uuid="fbec1136-52cc-4f76-b5c3-0d12d694d02f">
+      <name>Вопрос</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вопрос</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВопросыКвеста</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="93e45a19-67d2-416c-befc-227b13fc58c4">
+      <name>Ответ</name>
+      <synonym>
+        <key>ru</key>
+        <value>Ответ</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <nonNegative>true</nonNegative>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

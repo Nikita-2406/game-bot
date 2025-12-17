@@ -56,6 +56,7 @@
   <commonModules>CommonModule.ТелеграмПростаяВикторина</commonModules>
   <commonModules>CommonModule.ТелеграмЭхо</commonModules>
   <commonModules>CommonModule.ТелеграмТестСРасшифровкой</commonModules>
+  <commonModules>CommonModule.ТелеграмКвест</commonModules>
   <constants>Constant.ИдентификаторПоследнегоОбновления</constants>
   <constants>Constant.РежимРаботыБота</constants>
   <constants>Constant.ТокенТелеграмБота</constants>
@@ -67,10 +68,14 @@
   <catalogs>Catalog.УчетныеЗаписиТелеграм</catalogs>
   <catalogs>Catalog.ВопросыТестаСРасшифровкой</catalogs>
   <catalogs>Catalog.РасшифровкиТестаСРасшифровкой</catalogs>
+  <catalogs>Catalog.ВопросыКвеста</catalogs>
   <documents>Document.ПрохождениеТестаСРасшифровкой</documents>
+  <documents>Document.ПрохождениеКвеста</documents>
   <enums>Enum.РежимРаботыБота</enums>
   <enums>Enum.СтатусыТестаСРасшифровкой</enums>
+  <enums>Enum.СтатусыКвеста</enums>
   <dataProcessors>DataProcessor.ОбработкаВходящихСообщений</dataProcessors>
   <dataProcessors>DataProcessor.НастройкаТестаСРасшифровкой</dataProcessors>
   <informationRegisters>InformationRegister.СтатусыТестаСРасшифровкой</informationRegisters>
+  <informationRegisters>InformationRegister.СтатусыКвеста</informationRegisters>
 </mdclass:Configuration>
