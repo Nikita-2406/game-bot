@@ -57,6 +57,7 @@
   <commonModules>CommonModule.ТелеграмЭхо</commonModules>
   <commonModules>CommonModule.ТелеграмТестСРасшифровкой</commonModules>
   <commonModules>CommonModule.ТелеграмКвест</commonModules>
+  <commonModules>CommonModule.gigachat</commonModules>
   <constants>Constant.ИдентификаторПоследнегоОбновления</constants>
   <constants>Constant.РежимРаботыБота</constants>
   <constants>Constant.ТокенТелеграмБота</constants>

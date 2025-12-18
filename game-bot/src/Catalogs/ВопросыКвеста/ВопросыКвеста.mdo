@@ -87,6 +87,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="e2ba6586-8b74-4b2a-b6e8-195d001b4db0">
+    <name>Картинка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Картинка</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <tabularSections uuid="03f09e84-ff51-4657-831e-8f3eaa27bc5e">
     <producedTypes>
       <objectType typeId="99f0d7f9-17d3-4a83-9775-6af2dd317e37" valueTypeId="df27317f-6d5d-43d6-ada5-3c6c83449aa6"/>
